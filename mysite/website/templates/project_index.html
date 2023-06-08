@@ -26,11 +26,14 @@
           <main>
             {%for project in projects%}
           <div class="box">
-          <h2>{{project.title}}</h2>
+            <a href="{{project.link}}">
+          <h2>{{project.title}}</h2> </a>
           <p class = "moreimportant">{{project.description}}</p>
           <p>Technologies Used: {{project.technology}}</p>
+       
           <img id="my-image" class = "projectimage" src="{{project.image.url}}"  alt="img1">
-          </div>
+        
+        </div>
           {% endfor %}
           
           </main>

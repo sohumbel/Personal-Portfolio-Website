@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+   
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+        
+    </head>
+    <body>
+        <header>
+            <div id="left-section">
+                <h1 id="additional-text">Sohum Belhe</h1>
+            </div>
+            <div id="right-section">
+                <a id="projects" href="{%url 'website:project_index' %}">My Projects</a>
+            </div>
+           
+        </header>
+        <div id="thebody">
+            <div id="thetext"> 
+            <h1 id = "typing-text"> Hey, I'm Sohum &#128075 </h1> 
+            <h2>I am a second-year Computer Science major at the University of Maryland College Park.</h2>
+            <h3> I am passionate about everything tech-related and constantly seek opportunities to expand my knowledge and skills in this growing industry. When I’m not coding, you can usually find me playing basketball, traveling, or playing the piano.</h3>
+            <h3 id="subhead">Main Skills:</h3>
+            
+            <div id="oneliners">
+                <h4>Java</h4>
+                <h4>Python</h4>
+                <h4>HTML&CSS</h4>
+                <h4>Django</h4>
+                <h4>C</h4>
+                <h4>JavaScript</h4>
+
+            </div>
+        </div>
+        <img src="{% static 'jpeg/profile.jpg' %}" alt="notffound">
+
+        </div>
+
+        
+        
+    </body>
+    <script src="{% static 'js/typing.js' %}"></script>
+</html> 

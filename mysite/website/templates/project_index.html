@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+      
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Projects</title>
+        <link rel="stylesheet" href="{% static 'css/project_index.css' %}">
+      
+      </head>
+      <body>
+        <header>
+            <div id="left-section">
+                <a id="additional-text" href="{%url 'cover' %}">Sohum Belhe</h1>
+            </div>
+            <div id="right-section">
+                <a id="projects" href="{%url 'website:project_index' %}">My Projects</a>
+            </div>
+           
+        </header>
+          
+        <div class="title"> My Projects</div>
+          <main>
+            {%for project in projects%}
+          <div class="box">
+          <h2>{{project.title}}</h2>
+          <p class = "moreimportant">{{project.description}}</p>
+          <p>Technologies Used: {{project.technology}}</p>
+          <img id="my-image" class = "projectimage" src="{{project.image.url}}"  alt="img1">
+          </div>
+          {% endfor %}
+          
+          </main>
+          
+            </body>
+
+            <script>
+                // Get a reference to the image element
+                var img = document.getElementById('my-image');
+              
+                // Check the image's natural dimensions to determine orientation
+                img.onload = function() {
+                  var naturalWidth = img.naturalWidth;
+                  var naturalHeight = img.naturalHeight;
+              
+                  if (naturalWidth > naturalHeight) {
+                    // Landscape orientation
+                    img.style.maxWidth = '450px'; // Set a specific width for landscape images
+                    img.style.height = 'auto'; // Allow the height to adjust proportionally
+                  } else {
+                    // Portrait orientation
+                    img.style.maxHeight = '290px'; // Set a specific height for portrait images
+                    img.style.width = 'auto'; // Allow the width to adjust proportionally
+                  }
+                };
+              </script>
+</html>

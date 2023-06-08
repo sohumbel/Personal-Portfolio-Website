@@ -1,0 +1,99 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a242e;
+    height: 60px;
+   
+    padding-bottom: 10px;
+    padding-right: 20px;
+  }
+  
+  #projects {
+    color: white;
+    font-family: 'Open Sans';
+    
+}
+#additional-text {
+  text-decoration: none;
+  color: white;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 10px;
+}
+  
+  .title{
+    font-family: 'Open Sans';
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    height: calc(20vh - 80px);
+    padding-bottom: 5px;
+
+  }
+ 
+  #right-section {
+    float: right;
+}
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: calc(50vh - 80px);
+    padding: 20px;
+  }
+  
+  .box {
+    width: 500px;
+    height: 500px;
+    background-color: #2C3944;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  h2 {
+    font-family: 'Open Sans';
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0;
+    color: #ffffff;
+    margin-bottom: 10px;
+    padding-top: 30px;
+  }
+  
+  p {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    text-align: center;
+    color: #CACDD0;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #212E3A;
+  }
+  
+  
+  .projectimage {
+    
+    padding-top: 15px;
+
+  } 
+  .moreimportant{
+    font-weight: 600;
+  }
+
